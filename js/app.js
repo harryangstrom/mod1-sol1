@@ -7,6 +7,7 @@ angular.module('LunchCheck', [])
 LunchCheckController.$inject = ['$scope']; 
 function LunchCheckController($scope) {
 $scope.dishes = "";
+$scope.message = "Enter the dishes you'd like";
     $scope.check = function () {
         var dishes = checkEmptyString($scope.dishes.split(','));
         //console.log(dishes.length);

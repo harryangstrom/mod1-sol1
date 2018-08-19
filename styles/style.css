@@ -1,8 +1,22 @@
 .error {
     color: red;
-
+    border: red;
 }
 
 .noerror {
     color: green;
+    border: green;
+}
+
+.message {
+    font-size: 1.3em; 
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    width: 250px;
+}
+
+.menu {
+    width: 500px;
 }
