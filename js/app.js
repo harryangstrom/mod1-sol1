@@ -31,6 +31,11 @@ $scope.message = "Enter the dishes you'd like";
         
     };
 
+    $scope.checkEnter = function(e) {
+        if (e.keyCode == 13) $scope.check();
+        return;
+    }
+
     function checkEmptyString(array) {
         var words = 0;
         for (var i = 0; i < array.length; i++) {

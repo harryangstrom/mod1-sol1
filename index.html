@@ -14,10 +14,11 @@
 <body ng-app='LunchCheck'>
    <div class="container" ng-controller='LunchCheckController'>
      <h1>Lunch Checker</h1>
+     <p>It doesn't count empty strings.</p>
          <div class="form-group">
              <input id="menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control menu" ng-model="dishes"> <!-- Not counting empty items, with just 0 or more spaces -->
+             class="form-control menu" ng-model="dishes" ng-keyup="checkEnter($event);"> <!-- Not counting empty items, with just 0 or more spaces -->
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="check();">Check If Too Much</button>
